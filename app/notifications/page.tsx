@@ -1,0 +1,1 @@
+export default function Notifications(){return <div className="mx-auto max-w-2xl px-4 py-8"><h1 className="text-2xl font-bold">Notifications</h1><div className="card mt-6 p-6 text-sm text-zinc-500">Notifications will appear here.</div></div>}

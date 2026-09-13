@@ -1,0 +1,5 @@
+"use client";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+export function UserProfile() {
+  return <><SignedOut><div className="card p-8 text-center"><h1 className="text-xl font-bold">Your anonymous profile</h1><p className="mt-2 text-sm text-zinc-500">Sign in to manage it.</p><SignInButton mode="modal"><button className="mt-5 rounded-full bg-white px-5 py-3 font-semibold text-black">Sign in</button></SignInButton></div></SignedOut><SignedIn><div className="card p-6"><div className="flex items-center justify-between"><div><p className="text-xs text-zinc-500">Public identity</p><h1 className="mt-1 text-2xl font-bold">Anonymous</h1></div><UserButton /></div><p className="mt-5 text-sm text-zinc-500">Your real authentication identity is not displayed on posts.</p></div></SignedIn></>;
+}
